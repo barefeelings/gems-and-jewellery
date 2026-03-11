@@ -1,26 +1,97 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary: #0a0a0a;
+  --color-primary-light: #111111;
+  --color-gold: #c9a96e;
+  --color-gold-light: #e8d5b0;
+  --color-gold-dark: #a68b54;
+  --color-dark-card: #141414;
+
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-inter);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c9a96e;
+}
+
+/* Utility classes for luxury theme */
+.bg-dark       { background-color: #0a0a0a; }
+.bg-dark-card  { background-color: #141414; }
+.bg-dark-light { background-color: #111111; }
+
+.text-gold         { color: #c9a96e; }
+.text-gold-light   { color: #e8d5b0; }
+.text-muted        { color: rgba(255,255,255,0.5); }
+.text-muted-lg     { color: rgba(255,255,255,0.7); }
+
+.border-gold-dim   { border-color: rgba(201, 169, 110, 0.2); }
+.border-gold-md    { border-color: rgba(201, 169, 110, 0.4); }
+.border-gold-full  { border-color: #c9a96e; }
+
+.btn-gold {
+  background-color: #c9a96e;
+  color: #0a0a0a;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.btn-gold:hover { background-color: #e8d5b0; }
+
+/* Gold gradient text */
+.text-gold-gradient {
+  background: linear-gradient(to right, #c9a96e, #e8d5b0, #c9a96e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+}
+
+/* Font families */
+h1, h2, h3, h4 {
+  font-family: var(--font-playfair), 'Georgia', serif;
+}
+
+p, span, a, button, input, textarea, select, label {
+  font-family: var(--font-inter), 'Arial', sans-serif;
+}
+
+/* Input resets */
+input, textarea, select {
+  background: transparent;
+  outline: none;
+  color: #ffffff;
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(255,255,255,0.3);
 }
