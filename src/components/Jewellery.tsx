@@ -51,10 +51,10 @@ export default function Jewellery() {
           {jewelleryItems.map((item, index) => (
             <motion.div
               key={item.name}
-              // initial={{ opacity: 0, scale: 0.93 }}
-              // whileInView={{ opacity: 1, scale: 1 }}
-              // viewport={{ once: true }}
-              // transition={{ duration: 0.7, delay: index * 0.15 }}
+              initial={{ opacity: 0, scale: 0.93 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: index * 0.15 }}
               style={{ position: "relative", cursor: "pointer" }}
               className="group"
             >
@@ -63,12 +63,9 @@ export default function Jewellery() {
                   src={item.image}
                   alt={item.name}
                   fill
-                  className="object-cover transition-all duration-700 group-hover:scale-105"
-                  style={{ filter: "grayscale(60%)", transition: "filter 0.6s, transform 0.7s" }}
-                  onMouseEnter={e => ((e.currentTarget as HTMLImageElement).style.filter = "grayscale(0%)")}
-                  onMouseLeave={e => ((e.currentTarget as HTMLImageElement).style.filter = "grayscale(60%)")}
+                  className="object-cover opacity-70 transition-all duration-700 group-hover:scale-110 group-hover:opacity-100"
                 />
-                <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.1) 60%, transparent 100%)" }}></div>
+                <div className="absolute inset-0 transition-opacity duration-700 group-hover:opacity-60" style={{ background: "linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.1) 60%, transparent 100%)" }}></div>
 
                 <div className="absolute" style={{ bottom: "2.5rem", left: "2rem", right: "2rem" }}>
                   <span style={{ fontSize: "0.6rem", textTransform: "uppercase", letterSpacing: "0.3em", color: "#e8d5b0", display: "block", marginBottom: "0.5rem" }}>
