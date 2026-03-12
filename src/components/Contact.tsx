@@ -50,7 +50,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" style={{ background: "#0a0a0a", padding: "6rem 10px", overflow: "hidden" }}>
+    <section id="contact" style={{ background: "#0a0a0a", padding: "6rem 0", overflow: "hidden" }}>
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row" style={{ gap: "5rem" }}>
 

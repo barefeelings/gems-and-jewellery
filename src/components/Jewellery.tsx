@@ -26,7 +26,7 @@ const jewelleryItems = [
 
 export default function Jewellery() {
   return (
-    <section id="jewellery" style={{ background: "#0a0a0a", padding: "6rem 10px", position: "relative", overflow: "hidden" }}>
+    <section id="jewellery" style={{ background: "#0a0a0a", padding: "6rem 0", position: "relative", overflow: "hidden" }}>
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none" style={{ zIndex: 0 }}>
         <span style={{ fontFamily: "var(--font-playfair), serif", fontSize: "clamp(6rem,20vw,18rem)", color: "rgba(255,255,255,0.03)", textTransform: "uppercase", whiteSpace: "nowrap" }}>
           Jewellery

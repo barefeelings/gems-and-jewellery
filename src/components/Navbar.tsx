@@ -30,7 +30,7 @@ export default function Navbar() {
       style={{
         background: scrolled ? "rgba(10,10,10,0.92)" : "transparent",
         backdropFilter: scrolled ? "blur(12px)" : "none",
-        padding: scrolled ? "1rem 10px" : "1.5rem 10px",
+        padding: scrolled ? "1rem 0" : "1.5rem 0",
         boxShadow: scrolled ? "0 2px 20px rgba(0,0,0,0.5)" : "none",
       }}
     >

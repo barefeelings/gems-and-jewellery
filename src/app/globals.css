@@ -14,7 +14,6 @@
 
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
 }
 
@@ -32,30 +31,60 @@ body {
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: #0a0a0a;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #333;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #c9a96e;
 }
 
 /* Utility classes for luxury theme */
-.bg-dark       { background-color: #0a0a0a; }
-.bg-dark-card  { background-color: #141414; }
-.bg-dark-light { background-color: #111111; }
+.bg-dark {
+  background-color: #0a0a0a;
+}
 
-.text-gold         { color: #c9a96e; }
-.text-gold-light   { color: #e8d5b0; }
-.text-muted        { color: rgba(255,255,255,0.5); }
-.text-muted-lg     { color: rgba(255,255,255,0.7); }
+.bg-dark-card {
+  background-color: #141414;
+}
 
-.border-gold-dim   { border-color: rgba(201, 169, 110, 0.2); }
-.border-gold-md    { border-color: rgba(201, 169, 110, 0.4); }
-.border-gold-full  { border-color: #c9a96e; }
+.bg-dark-light {
+  background-color: #111111;
+}
+
+.text-gold {
+  color: #c9a96e;
+}
+
+.text-gold-light {
+  color: #e8d5b0;
+}
+
+.text-muted {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.text-muted-lg {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.border-gold-dim {
+  border-color: rgba(201, 169, 110, 0.2);
+}
+
+.border-gold-md {
+  border-color: rgba(201, 169, 110, 0.4);
+}
+
+.border-gold-full {
+  border-color: #c9a96e;
+}
 
 .btn-gold {
   background-color: #c9a96e;
@@ -65,7 +94,10 @@ body {
   text-transform: uppercase;
   transition: background-color 0.3s, transform 0.2s;
 }
-.btn-gold:hover { background-color: #e8d5b0; }
+
+.btn-gold:hover {
+  background-color: #e8d5b0;
+}
 
 /* Gold gradient text */
 .text-gold-gradient {
@@ -77,21 +109,34 @@ body {
 }
 
 /* Font families */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-playfair), 'Georgia', serif;
 }
 
-p, span, a, button, input, textarea, select, label {
+p,
+span,
+a,
+button,
+input,
+textarea,
+select,
+label {
   font-family: var(--font-inter), 'Arial', sans-serif;
 }
 
 /* Input resets */
-input, textarea, select {
+input,
+textarea,
+select {
   background: transparent;
   outline: none;
   color: #ffffff;
 }
 
-input::placeholder, textarea::placeholder {
-  color: rgba(255,255,255,0.3);
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.3);
 }
